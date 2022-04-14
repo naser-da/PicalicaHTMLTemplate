@@ -1,0 +1,150 @@
+body {
+    margin: 0 auto;
+    font-family: Calibri;
+    padding-bottom: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+    grid-template-areas: ". content content content content .";
+  }
+  
+  
+  .grid-benefit-detail {
+    margin-top: 4rem;
+  }
+  
+  .content {
+    text-align: center;
+    grid-area: content;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .dark-header {
+    background-color: #615D9A;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .light-header {
+    color: white;
+    background-color: #7474B4;
+    padding-top: 500px;
+    margin-top: -500px;
+  }
+  
+  .brand-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: .5rem;
+    padding-top: 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .sub-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .dark-header-divider {
+    background-image: url("images/dark-background.svg");
+    height: 150px;
+    margin-top: -5px;
+    background-position: bottom left;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .light-header-divider {
+    background-image: url("images/light-background.svg");
+    height: 150px;
+    margin-top: -5px;
+    background-position: bottom left;
+    background-size: cover;
+  }
+  
+  .email-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  
+  .email-form input {
+    text-align: right;
+    background-color: white;
+    color: #005681;
+    border: 2px solid black;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin-right: 1em;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .email-form input:focus {
+    background-color: #DCF3FF;
+  }
+  
+  .email-form button {
+    color: white;
+    background-color: #111;
+    border: 2px solid white;
+    border-radius: .5em;
+    padding: .5em 1em;
+    max-width: 250px;
+    cursor: pointer;
+  }
+  
+  .email-form button:hover, .email-form button:focus {
+    background-color: #333;
+  }
+  
+  .benefits-section {
+    grid-area: benefits;
+    margin-left: 3rem;
+    justify-self: flex-end;
+  }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .benefit-detail {
+    grid-column: span 2;
+    margin: 2rem;
+  }
+  
+  .benefit-detail-title {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .benefit-detail-text {
+    text-align: right;
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: lighter;
+  }
